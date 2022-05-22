@@ -2,8 +2,8 @@
 
 def generate_dict_numbers(n):
     numbers_dict = {}
-    for i in range(n):
-        numbers_dict[i + 1] = 3 * (i + 1) + 1
+    for i in range(1, n + 1):
+        numbers_dict[i] = 3 * (i) + 1
     return numbers_dict
 
 n = int(input("Введите N количество элементов словаря: "))

@@ -2,10 +2,13 @@
 
 import random
 
-def generate_random_numbers(n):
-    return random.sample(range(100), int(n))
+def generate_list(n):
+    list_numbers = []
+    for i in range(0, n):
+        list_numbers.append((-3)**i)
+    return list_numbers
 
-n = input("Введите N количество элементов списка: ")
-random_numbers = generate_random_numbers(n)
+n = int(input("Введите N количество элементов списка: "))
+random_numbers = generate_list(n)
 
 print(random_numbers)
