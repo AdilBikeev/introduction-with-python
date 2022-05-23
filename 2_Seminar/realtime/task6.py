@@ -12,7 +12,8 @@ def find_second_string_in_list(words, str):
             cnt_find += 1
             if cnt_find == 2:
                 return i
-
+    return -1
+    
 words = ["qwe", "asd", "zxc", "qwe", "ertqwe", "qwe"]
 pivot = "qwe"
 second_index = find_second_string_in_list(words, pivot)
